@@ -36,7 +36,7 @@ body {
 }
 .navigation-sub-container {
     display: flex;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background: #E8C838;
     align-items: center
