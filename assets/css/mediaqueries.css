@@ -26,4 +26,32 @@
     .sectionDimension {
         height: 10rem;
     }
+    /* .card-portfolio-link--style {
+        color: white;
+        font-size: .75rem;
+        margin-left: 13%;
+    }
+    .card-title-style {
+        font-size: 0.75rem;
+        color: white;
+    }
+    .card-content-style {
+        color: white;
+        font-size: .5rem;
+    } */
+}
+@media only screen and (max-width:992px) {
+    .card-portfolio-link--style {
+        color: white;
+        font-size: .75rem;
+        margin-left: 13%;
+    }
+    .card-title-style {
+        font-size: 0.75rem;
+        color: white;
+    }
+    .card-content-style {
+        color: white;
+        font-size: .5rem;
+    }
 }

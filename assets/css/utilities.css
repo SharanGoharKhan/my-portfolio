@@ -18,3 +18,34 @@
 .marginLeft10 {
     margin-left: 10%
 }
+.fullheight {
+    height: 100%;
+}
+.centerAlign {
+    display: flex;
+    align-items: center;
+}
+.justifyCenter {
+    display: flex;
+    justify-content: center;
+}
+.flexEnd {
+    justify-content: flex-end;
+}
+.noMargins {
+    margin: 0;
+}
+.noPaddings {
+    padding: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+.invisible {
+    transition: opacity 0.5s ease;
+    opacity: 0.0;
+}  
+.visible {
+    transition: opacity 0.5s ease;
+    opacity: 1.0;
+}

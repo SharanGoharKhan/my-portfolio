@@ -9,6 +9,15 @@
     <meta name="description" content="This site contains some examples of Sharan's work">
     <meta name="keywords" content="Freelancer Javascript Developer React React Native Node">
     <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- For animation when scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Normalize css-->
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!-- Utilities css-->
@@ -25,20 +34,31 @@
     <header class="header responsiveHeight">
         <div class="single-block responsiveWidth"></div>
         <div class="name-block">
-            <h3>Sharan Gohar</h3>
+            <h1 class="name-block-style">Sharan Gohar</h1>
         </div>
     </header>
     <nav class="navigation responsiveHeight">
         <div class="navigation-sub-container">
             <ul class="ul-style">
                 <li class="list-item-style">
-                    Strava
+                    <a class="list-item-style" href="https://medium.com/@sharangohar" target="_blank">
+                        Medium
+                    </a>
                 </li>
                 <li class="list-item-style">
-                    Github
+                    <a class="list-item-style" href="https://www.strava.com/athletes/18389313" target="_blank">
+                        Strava
+                    </a>
                 </li>
                 <li class="list-item-style">
-                    Linkedin
+                    <a class="list-item-style" href="https://github.com/SharanGoharKhan" target="_blank">
+                        Github
+                    </a>
+                </li>
+                <li class="list-item-style">
+                    <a class="list-item-style" href="https://www.linkedin.com/in/sharan-gohar-khan/" target="_blank">
+                        Linkedin
+                    </a>
                 </li>
             </ul>
         </div>
@@ -46,135 +66,195 @@
     <section class="introduction" id="introduction">
         <div class="introduction-container">
             <div class="introduction-sub-container">
-                <h3 class="marginBot3">Hi there!</h3>
-                <h2 class="marginBot3">Sharan is a front-end developer who fell in love with React, React native & Node.js</h2>
-                <h3>I also love hiking, biking & skydiving!</h3>
+                <h3 class="marginBot3 intro--title-style">Hi there!</h3>
+                <h2 class="marginBot3 intro-description-style">Sharan is a front-end developer who fell in love with React, React native & Node.js</h2>
+                <h3 class="intro--title-style">I also love hiking, biking & skydiving!</h3>
             </div>
         </div>
     </section>
-    <section class="item sectionDimension" id="enatega">
-        <div class="item--block-img">
-            <img class="img-responsive" src="assets/images/placeholder.jpg" alt="enatega">
-        </div>
-        <div class="item--block-detail content-align">
-            <div class="item-content-container">
-                <div class="top-container">
-                    <h3 class="item-title">
-                        Enatega
-                    </h3>
-                    <h4 class="item-description">
-                        Enatega is an android & ios food delivery application custom made for individual resturants.
-                    </h4>
-                    <h5 class="item-technology">
-                        React, React Native and Node
-                    </h5>
+    <section data-aos="fade-left" class="container-fluid leftContainer">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #b28f6b;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style">Ecommero</h1>
+                        <h2 class="card-content-style">Ecommero is an Android & iOS app for ecommerce.</h2>
+                        <h2 class="card-content-style">React Native, Node, Mongoose, GraphQL, Apollo Client</h2>
+                    </div>
+                    <a href="https://ecommero.com/" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
                 </div>
-                <div class="bottom-container">
-                    <h3 class="item-link">
-                        View on Github
-                    </h3>
-                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/ecommero/completed.png" alt="eommero">
             </div>
         </div>
     </section>
-    <section class="item sectionDimension" id="myndplan">
-        <div class="item--block-detail content-align">
-            <div class="item-content-container">
-                <div class="top-container">
-                    <h3 class="item-title">
-                        Myndplan
-                    </h3>
-                    <h4 class="item-description">
-                        Better mental health at your fingertips. Its a planning app to relive mental stress and keep you productive.
-                    </h4>
-                    <h5 class="item-technology">
-                        AngularJS, Laravel and Mongodb
-                    </h5>
-                </div>
-                <div class="bottom-container">
-                    <h3 class="item-link">
-                        View on Github
-                    </h3>
-                </div>
+    <section data-aos="fade-right" class="container-fluid rightContainer">
+        <div class="row flexEnd">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/enatega/complete.png" alt="enatega">
             </div>
-        </div>
-        <div class="item--block-img">
-            <img class="img-responsive" src="assets/images/placeholder.jpg" alt="myndplan">
-        </div>
-    </section>
-    <section class="item sectionDimension" id="gkhair">
-        <div class="item--block-img">
-            <img class="img-responsive" src="assets/images/placeholder.jpg" alt="myndplan">
-        </div>
-        <div class="item--block-detail content-align">
-            <div class="item-content-container">
-                <div class="top-container">
-                    <h3 class="item-title">
-                        GK Hair
-                    </h3>
-                    <h4 class="item-description">
-                        Its a website that sells makeup and specific hair products.
-                    </h4>
-                    <h5 class="item-technology">
-                        AngularJS, SCSS and Java Spring
-                    </h5>
-                </div>
-                <div class="bottom-container">
-                    <h3 class="item-link">
-                        View on Github
-                    </h3>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #d9492f;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style">Enatega</h1>
+                        <h2 class="card-content-style">Enatega is an android & ios food delivery application custom made for individual resturants.</h2>
+                        <h2 class="card-content-style">React Native, Node, Mongoose, GraphQL, Apollo Client</h2>
+                    </div>
+                    <a href="https://www.enatega.com/" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="item sectionDimension vertical-items" id="aboutme">
-        <div class="top-text-container">
-            <div class="top-text-sub-container">
-                <h3>View More Case Studies on Github</h3>
+    <section data-aos="fade-left" class="container-fluid leftContainer">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #4e42e6;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style">Goosecase</h1>
+                        <h2 class="card-content-style">Goose is an easy way for HR investigation.</h2>
+                        <h2 class="card-content-style">Node, Redux, React, REST, Mongoose</h2>
+                    </div>
+                    <a href="https://goosecase.com/" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/goosecase/complete.png" alt="goosecase">
             </div>
         </div>
-        <div class="about-me-container">
-            <div class="about-me-row">
-                <div class="row-about-me-image">
-                    <img class="img-responsive" src="assets/images/placeholder.jpg" alt="work">
-                </div>
-                <div class="row-about-me-content">
-                    <h3>I have worked at HireNinja, Gryffin Tech & Mobinspire before</h3>
-                    <h5 class="marginTop3">View LinkedIn</h5>
-                </div>
+    </section>
+    <section data-aos="fade-right" class="container-fluid rightContainer">
+        <div class="row flexEnd">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/trabble/complete.png" alt="trabble">
             </div>
-            <div class="about-me-row">
-                <div class="row-about-me-content">
-                    <h3>I am an avid hiker who has hiked 2300+ miles!</h3>
-                    <h5 class="marginTop3">View Strava Profile</h5>
-                </div>
-                <div class="row-about-me-image">
-                    <img class="img-responsive" src="assets/images/placeholder.jpg" alt="play">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #ee4c34;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style">Trabble</h1>
+                        <h2 class="card-content-style">Trabble is a customized personalized mobile chat-based travel concierge.</h2>
+                        <h2 class="card-content-style">Angular, Material Design, Rxjs, SCSS</h2>
+                    </div>
+                    <a href="https://trabble.co" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact-section">
-        <div class="contact-section-container">
-            <h4 class="marginLeft10">Intrested in talking?</h4>
-            <h1 class="marginLeft10">hi@sharan.com</h1>
+    <section data-aos="fade-left" class="container-fluid leftContainer">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #499BFF;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style">Myndplan</h1>
+                        <h2 class="card-content-style">Better mental health at your fingertips. Its a planning app to relive mental stress and keep you
+                            productive.
+                        </h2>
+                        <h2 class="card-content-style">AngularJS, Laravel, MySql, SASS</h2>
+                    </div>
+                    <a href="http://myndplan.com/" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/myndplan/complete.png" alt="myndplan">
+            </div>
         </div>
     </section>
-    <footer class="navigation responsiveHeight">
+    <section data-aos="fade-right" class="container-fluid rightContainer">
+        <div class="row flexEnd">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 noPaddings">
+                <img class="img-responsive" src="assets/images/gkhair/complete.png" alt="gkhair">
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 noPaddings" style="background: #FAD664;">
+                <div class="card-portfolio">
+                    <div class="card-portfolio-content">
+                        <h1 class="card-title-style gkhair--style">Gkhair</h1>
+                        <h2 class="card-content-style gkhair--style">GkHair is a ecommerce website for hair products.</h2>
+                        <h2 class="card-content-style gkhair--style">AngularJS, Material Design, Rxjs, SCSS</h2>
+                    </div>
+                    <a href="https://www.gkhair.com/" target="_blank" class="card-portfolio-link">
+                        <h1 class="card-portfolio-link--style">Visit Site</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid marginBot80">
+        <div class="row justifyCenter marginBot80">
+            <a class="viewmorecaseStyle" href="https://github.com/SharanGoharKhan" target="_blank">
+                View More Case Studies on Github
+            </a>
+        </div>
+        <div class="row justifyCenter marginBot80">
+            <div data-aos="zoom-in" class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 justifyCenter">
+                <img class="about-me-suitcase" src="assets/images//aboutme/suitcase.png" alt="suitcase">
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h1 class="about-me-title">I have worked at HireNinja, Gryffin Tech & MobInspire before!</h1>
+                <a href="https://www.linkedin.com/in/sharan-gohar-khan/" target="_blank">
+                    <h2 class="about-me-link">View Linkedin</h2>
+                </a>
+            </div>
+        </div>
+        <div class="row justifyCenter">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h1 class="about-me-title pinkColor">I am an avid hiker who has hike 100+ miles!</h1>
+                <a href="https://www.strava.com/athletes/18389313" target="_blank">
+                    <h2 class="about-me-link pinkColor">View Strava Profile</h2>
+                </a>
+            </div>
+            <div data-aos="zoom-in" class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 justifyCenter">
+                <img class="about-me-suitcase" src="assets/images/aboutme/hikingbag.png" alt="suitcase">
+            </div>
+        </div>
+    </section>
+    <section class="introduction heightContact" id="introduction">
+        <div class="introduction-container">
+            <div class="introduction-sub-container">
+                <h3 class="marginBot3 intro--contact-style">Intrested in talking?</h3>
+                <h2 class="marginBot3 intro-description-style">sharan.gohar@gmail.com</h2>
+            </div>
+        </div>
+    </section>
+    <nav class="navigation responsiveHeight">
         <div class="navigation-sub-container">
             <ul class="ul-style">
                 <li class="list-item-style">
-                    Strava
+                    <a class="list-item-style" href="https://medium.com/@sharangohar" target="_blank">
+                        Medium
+                    </a>
                 </li>
                 <li class="list-item-style">
-                    Github
+                    <a class="list-item-style" href="https://www.strava.com/athletes/18389313" target="_blank">
+                        Strava
+                    </a>
                 </li>
                 <li class="list-item-style">
-                    Linkedin
+                    <a class="list-item-style" href="https://github.com/SharanGoharKhan" target="_blank">
+                        Github
+                    </a>
+                </li>
+                <li class="list-item-style">
+                    <a class="list-item-style" href="https://www.linkedin.com/in/sharan-gohar-khan/" target="_blank">
+                        Linkedin
+                    </a>
                 </li>
             </ul>
         </div>
-    </footer>
+    </nav>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
